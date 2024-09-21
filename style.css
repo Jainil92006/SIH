@@ -1,0 +1,238 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    margin: 0;
+}
+
+/* Header section */
+header {
+    background-color: #32145c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px; /* Doubled padding to increase the height of purple strip */
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    max-width: 150px; /* Increased size for the logo */
+    height: auto;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-right: 10px; 
+}
+
+.nav-menu li {
+    margin: 0 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+    transition: color 0.3s;
+    /* transition: all 1s ease; */
+}
+
+.nav-menu a:hover {
+    color: #ddd;
+    text-decoration: underline;
+    /* padding: 0.5rem 0.75rem; */
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.25s;
+    /* transition: all 1s ease-out; */
+}
+
+
+.intro {
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.intro p {
+    margin-left: 120px;
+    margin-right: 120px;
+    font-size: 26px; /* Increased text size for brief */
+    line-height: 1.8;
+}
+
+/* Module sections */
+.module {
+    margin: 80px 0; /* Increased space between the boxes */
+    padding: 0 20px;
+}
+
+.module h2 {
+    text-align: center;
+    color: #32145c;
+    margin-bottom: 30px;
+    font-size: 36px; /* Increased heading size */
+}
+
+.module-box {
+    background-color: #32145c; /* Set the shade of purple you provided */
+    color: white; /* Text color is now white */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-left: 240px; /* Increased margin from left */
+    margin-right: 240px; /* Increased margin from right */
+    height: auto; /* Adjusted height to fit the content */
+    position: relative;
+    font-size: 22px; /* Increased size of text inside the box */
+    line-height: 1.6;
+    border-radius: 20px;
+}
+
+.know-more {
+    text-decoration: none;
+    color: #32145c; /* Reversed colors */
+    background-color: white; /* White background for Know More button */
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 5px; /* Positioned at the bottom */
+    right: 10px;
+    border-radius: 10px;
+    font-size: 15px; /* Increased button text size */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.know-more:hover {
+    background-color: #5a204e;
+    color: white;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  footer {
+    background-color: #282828;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 220px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  .footer-section p, 
+  .footer-section ul {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #f39c12;
+  }
+  
+  .social-media a {
+    color: white;
+    margin-right: 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: #f39c12;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    /* background-color: #222; */
+    /* padding: 20px 0 0 0; */
+}
+
+.footer-bottom p {
+      /* margin: 50px 0 0 0; */
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .intro p, .module-box {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .module-box {
+        padding: 20px;
+    }
+}
