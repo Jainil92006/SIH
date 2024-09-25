@@ -4,51 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Homepage</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <!-- Header with logo and navigation -->
-    <header>
-        <div class="logo">
-            <!-- Add your logo image here -->
-            <img src="logo.png" alt="Logo">
-        </div>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#sr">Support & Reporting</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li> <a href="reg.html">Login/Signup</a></li>
-            </ul>
-            
-        </nav>
-    </header>
+    <header class="navbar">
+      <div class="logo">
+          <img src="logo.png" alt="Logo">
+      </div>
+      <div class="vertical-line"></div>
+      <div class="gov">
+          <img src="gove.png" alt="Gove Logo">
+      </div>
+      <div class="search-container">
+          <form action="#" method="get">
+              <input type="text" placeholder="Search..." name="search">
+              <button type="submit">Search</button>
+          </form>
+      </div>
+      <div class="gov1">
+          <img src="gov1.png" alt="Gov1 Logo">
+      </div>
+  </header>
+
+
+    <div class="second-header">
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#sr">Support & Reporting</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li> <a href="reg.html">Login/Signup</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div class="slider">
+      <div class="slides">
+          <div class="slide">
+              <img src="d1.png" alt="Slide 1">
+          </div>
+          <div class="slide">
+              <img src="d2.png" alt="Slide 2">
+          </div>
+          <div class="slide">
+              <img src="d3.png" alt="Slide 3">
+          </div>
+          <div class="slide">
+              <img src="d1.png" alt="Slide 4">
+          </div>
+      </div>
+  </div>
+  
+  
+    
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+
+  <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  
 
     <!-- Main content -->
     <main>
-        <section class="intro">
-            <p>The anti-doping concept is fundamental to maintaining integrity and fairness in athletics. It encompasses a range of policies, testing procedures, and education programs designed to prevent the use of performance-enhancing drugs and methods. The ultimate goal is to create a level playing field where athletes compete based on their natural abilities and hard work.
+      <section class="intro">
+        <p>The anti-doping concept is fundamental to maintaining integrity and fairness in athletics. It encompasses a range of policies, testing procedures, and education programs designed to prevent the use of performance-enhancing drugs and methods. The ultimate goal is to create a level playing field where athletes compete based on their natural abilities and hard work.
+        <!-- Full content omitted for brevity -->
+        Join us in our mission to create a doping-free sporting world. Together, we can ensure that the essence of competition remains pure and that future generations of athletes can pursue their dreams with integrity. Explore our resources and learn how you can contribute to this vital cause.
+        </p>
+        
+        <div class="discover-more">
+            <a href="#" id="discover-link">Discover us more <span class="arrow">→</span></a>
+        </div>
+    </section>
 
-                Doping undermines the spirit of sport, compromising the health of athletes and the trust of fans. Our anti-doping efforts focus on three core pillars: prevention, detection, and enforcement. 
-                
-                1. *Prevention*: Education is key. We provide resources for athletes, coaches, and support staff to understand the dangers of doping and the importance of clean sport. Workshops, seminars, and online materials help cultivate a culture of integrity.
-                
-                2. *Detection*: Rigorous testing protocols are in place to identify violations. This includes random drug testing in and out of competition, as well as the monitoring of athletes' biological passports, which track changes in biomarkers over time to detect irregularities.
-                
-                3. *Enforcement*: When violations occur, strict penalties are enforced to deter future offenses. These consequences not only affect individual athletes but also send a strong message about the importance of clean competition.
-                
-                We also collaborate with international bodies, such as the World Anti-Doping Agency (WADA), to harmonize standards and practices globally. This cooperation ensures that athletes everywhere are subject to the same rigorous anti-doping regulations.
-                
-                Our commitment to anti-doping extends beyond just compliance; it’s about fostering an environment where athletes can thrive without the pressure to cheat. By promoting clean sport, we support the health and well-being of athletes and uphold the values of respect, fairness, and excellence.
-                
-                Join us in our mission to create a doping-free sporting world. Together, we can ensure that the essence of competition remains pure and that future generations of athletes can pursue their dreams with integrity. Explore our resources and learn how you can contribute to this vital cause.</p>
-        </section>
 
         <!-- Scrolling content with module boxes -->
         <section class="module">
@@ -67,6 +107,8 @@
             </div>
         </section>
 
+
+    
 
         <section id="news" class="image-slider">
           <div class="slider-container">
@@ -206,7 +248,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="hetang.jpeg" alt="Jane" style="width: 100%" />
+            <img src="hetang.jpeg" alt="Jane"  style="width: 100%" height="475px" />
             <div class="container">
               <h2>Hetang Patel</h2>
               <p class="title">Frontend Developer</p>
@@ -219,7 +261,7 @@
     
         <div class="column">
           <div class="card" >
-            <img src="jainil.jpg" alt="Mike" style="width: 100%" height="530px"/>
+            <img src="jap.jpg" alt="Mike" style="width: 100%" height="475px"/>
             <div class="container">
               <h2>Jainil Patel</h2>
               <p class="title">Frontend Developer</p>
@@ -232,7 +274,7 @@
     
         <div class="column">
           <div class="card">
-            <img src="hetaa.jpg" alt="John" style="width: 100%" />
+            <img src="hetaa.jpg" alt="John"  style="width: 100%" height="475px"/>
             <div class="container">
               <h2>Heta Patel</h2>
               <p class="title">Designer</p>
@@ -246,7 +288,7 @@
       <div class="row">
           <div class="column">
             <div class="card">
-              <img src="daivik.jpg" alt="Jane" style="width: 100%" />
+              <img src="daivik.jpg" alt="Jane"  style="width: 100%" height="475px" />
               <div class="container">
                 <h2>Daivik Patel</h2>
                 <p class="title">Designer</p>
@@ -259,10 +301,10 @@
       
           <div class="column">
             <div class="card">
-              <img src="team1.jpg" alt="Mike" style="width: 100%" />
+              <img src="ved.jpg" alt="Mike"  style="width: 100%" height="475px" />
               <div class="container">
-                <h2>Mike Ross</h2>
-                <p class="title">Art Director</p>
+                <h2>Ved Raval</h2>
+                <p class="title">Designer</p>
                 <p>Some text that describes me.</p>
                 <p>mike@example.com</p>
                 <p><button class="button">Contact</button></p>
@@ -272,10 +314,10 @@
       
           <div class="column">
             <div class="card">
-              <img src="team3.jpg" alt="John" style="width: 100%" />
+              <img src="team3.jpg" alt="John"  style="width: 100%" height="475px" />
               <div class="container">
-                <h2>John Doe</h2>
-                <p class="title">Designer</p>
+                <h2>Shehjad Palija</h2>
+                <p class="title">Backend Developer</p>
                 <p>Some text that describes me.</p>
                 <p>john@example.com</p>
                 <p><button class="button">Contact</button></p>
