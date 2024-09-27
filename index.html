@@ -46,7 +46,8 @@
     </div>
 
 
-    <div class="slider">
+     <!-- Popup Modal Container -->
+     <div class="slider">
       <div class="slides">
           <div class="slide">
               <img src="d1.png" alt="Slide 1">
@@ -55,11 +56,9 @@
               <img src="d2.png" alt="Slide 2">
           </div>
           <div class="slide">
-              <img src="d3.png" alt="Slide 3">
+              <img src="d3.png" alt="Slide 3"   style="width: 1900px;">
           </div>
-          <div class="slide">
-              <img src="d1.png" alt="Slide 4">
-          </div>
+          
       </div>
   </div>
   
@@ -74,8 +73,6 @@
       <span class="dot" onclick="currentSlide(3)"></span>
       <span class="dot" onclick="currentSlide(4)"></span>
   </div>
-  
-
     <!-- Main content -->
     <main>
       <section class="intro">
@@ -83,39 +80,23 @@
         <!-- Full content omitted for brevity -->
         Join us in our mission to create a doping-free sporting world. Together, we can ensure that the essence of competition remains pure and that future generations of athletes can pursue their dreams with integrity. Explore our resources and learn how you can contribute to this vital cause.
         </p>
-        
+    
         <div class="discover-more">
             <a href="#" id="discover-link">Discover us more <span class="arrow">→</span></a>
         </div>
+    
+        <!-- Horizontal line added here -->
+        <hr class="intro-line">
     </section>
 
 
         <!-- Scrolling content with module boxes -->
-        <section class="module">
-            <h2 id="articles">Articles</h2>
-            <div class="module-box">
-                <p>Welcome to our Articles module, where we delve into the critical issues surrounding anti-doping in sports. This section provides a comprehensive collection of articles aimed at educating athletes, coaches, and fans about the importance of clean competition.
-
-                    Our articles cover a wide range of topics, including the latest research on performance-enhancing drugs, case studies of doping violations, and interviews with experts in the field. We also explore the psychological and health implications of doping, emphasizing the long-term consequences for athletes.
-                    
-                    In addition, we analyze the effectiveness of current anti-doping measures and highlight innovative approaches being adopted worldwide. By discussing the role of technology in detection and prevention, we aim to keep our audience informed about advancements in anti-doping strategies.
-                    
-                    Through these articles, we strive to foster a deeper understanding of the ethical and moral dimensions of doping in sports. We encourage open dialogue and critical thinking, helping to shape a culture of integrity and respect.
-                    
-                    Stay informed and engaged as we provide the latest insights and developments in the fight against doping. Together, we can champion clean sport and support a fair and healthy athletic environment for all.</p>
-                <a href="#" class="know-more">Know More</a>
-            </div>
-        </section>
-
-
-    
-
-        <section id="news" class="image-slider">
+        <section id="articles" class="image-slider">
           <div class="slider-container">
              
               <div class="slider-item">
                   <a href="doping-info1.html">
-                      <img src="team1.jpg" alt="Doping Concept 1">
+                      <img src="a1.jpg" alt="Doping Concept 1">
                       <div class="info">
                           <h3>Doping Case Study</h3>
                           <p>Learn about high-profile doping cases and their impact.</p>
@@ -125,7 +106,7 @@
           
               <div class="slider-item">
                   <a href="doping-info2.html">
-                      <img src="team2.jpg" alt="Anti-Doping Concept 2">
+                      <img src="a2.jpg" alt="Anti-Doping Concept 2">
                       <div class="info">
                           <h3>Anti-Doping Technologies</h3>
                           <p>Explore modern testing methods used to catch doping violations.</p>
@@ -135,7 +116,7 @@
         
               <div class="slider-item">
                   <a href="doping-info3.html">
-                      <img src="team3.jpg" alt="Anti-Doping Awareness">
+                      <img src="a3.jpg" alt="Anti-Doping Awareness">
                       <div class="info">
                           <h3>Anti-Doping Awareness</h3>
                           <p>Discover global efforts to raise awareness about clean sport.</p>
@@ -145,7 +126,7 @@
            
               <div class="slider-item">
                   <a href="doping-info4.html">
-                      <img src="team2.jpg" alt="Testing Procedures">
+                      <img src="t4.jpg" alt="Testing Procedures">
                       <div class="info">
                           <h3>Testing Procedures</h3>
                           <p>Understand how doping tests are conducted during competitions.</p>
@@ -153,19 +134,11 @@
                   </a>
               </div>
               
-              <div class="slider-item">
-                  <a href="doping-info5.html">
-                      <img src="team3.jpg" alt="Consequences of Doping">
-                      <div class="info">
-                          <h3>Consequences of Doping</h3>
-                          <p>What happens when athletes get caught doping? Learn the outcomes.</p>
-                      </div>
-                  </a>
-              </div>
+            
             
               <div class="slider-item">
                   <a href="doping-info6.html">
-                      <img src="team2.jpg" alt="Doping Prevention Campaigns">
+                      <img src="a4.jpg" alt="Doping Prevention Campaigns">
                       <div class="info">
                           <h3>Doping Prevention Campaigns</h3>
                           <p>Discover various campaigns aimed at preventing doping in sports.</p>
@@ -173,35 +146,85 @@
                   </a>
               </div>
              
-              <div class="slider-item">
-                  <a href="doping-info7.html">
-                      <img src="team3.jpg" alt="Effects of Doping on Health">
-                      <div class="info">
-                          <h3>Effects of Doping on Health</h3>
-                          <p>Learn about the harmful long-term health effects of doping substances.</p>
-                      </div>
-                  </a>
-              </div>
-            
-              <div class="slider-item">
-                  <a href="doping-info8.html">
-                      <img src="team2.jpg" alt="The Future of Anti-Doping">
-                      <div class="info">
-                          <h3>The Future of Anti-Doping</h3>
-                          <p>Explore what the future holds for anti-doping technologies.</p>
-                      </div>
-                  </a>
-              </div>
+             
           </div>
       </section>
 
-        <section class="module">
-            <h2 id="events">Events</h2>
-            <div class="module-box">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum consequat sapien, et placerat turpis feugiat ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum consequat sapien, et placerat turpis feugiat ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum consequat sapien, et placerat turpis feugiat ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="#" class="know-more">Know More</a>
+
+    
+
+       
+
+
+
+      <section class="latest-news">
+        <h2 id="news" style="color: #555;">Latest News</h2>
+        <div class="news-container">
+            <!-- News Item 1 -->
+            <div class="news-item">
+                <img src="t4.jpg" alt="Re-Accreditation Training">
+                <h3>NADA India Enhances Capacity: Re-Accreditation Training For DCOs/BCOs</h3>
+                <p class="date">July 4, 2024</p>
+                <p class="description">NADA India organized a two-day Re-Accreditation Training Course for DCOs/BCOs from 2nd July to 3rd July, 2024. The session aimed to enhance the practical skills.</p>
+                <a href="#" class="read-more">Read More</a>
             </div>
-        </section>
+            <!-- News Item 2 -->
+            <div class="news-item">
+                <img src="a1.jpg" alt="Anti-Doping Awareness Session">
+                <h3>NADA India's Anti-Doping Awareness Session</h3>
+                <p class="date">May 25, 2024</p>
+                <p class="description">NADA India conducted an Anti-Doping Awareness Session for National Kickboxing Championship 2024 in Pune, Maharashtra. The session successfully raised awareness on anti-doping measures for more.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <!-- News Item 3 -->
+            <div class="news-item">
+                <img src="a2.jpg" alt="Anti-Doping Awareness Session">
+                <h3>NADA India's Anti-Doping Awareness Session</h3>
+                <p class="date">May 8, 2024</p>
+                <p class="description">NADA India's Anti-Doping Awareness Session for the 7th MMA National Championship at Raipur, concluded with a turnout of 600+ athletes and their support personnel.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="browse-more">
+            <a href="#">Browse all news <span class="arrow">&rarr;</span></a>
+        </div>
+        <hr class="line">
+    </section>
+
+      <div class="events-section">
+        <h1 id="events">Upcoming Events</h1>
+        <div class="event">
+            <div class="date">
+                <span class="day">16</span>
+                <span class="month-year">
+                    <span class="month">January</span>
+                    <span class="year">2023</span>
+                </span>
+            </div>
+            <div class="details">
+                <span class="event-label">Event</span>
+                <hr>
+                <p>Global Learning and Development Framework (GLDF) – Training for anti-doping practitioners. Aldus PageMaker including versions of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="date">
+                <span class="day">18</span>
+                <span class="month-year">
+                    <span class="month">January</span>
+                    <span class="year">2023</span>
+                </span>
+            </div>
+            <div class="details">
+                <span class="event-label">Event</span>
+                <hr>
+                <p style="font-size: 1rem;  color: #555;">Global Learning and Development Framework (GLDF) – Training for anti-doping practitioners. Aldus PageMaker including versions of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="all-events-link">
+            <a href="#">All upcoming events →</a>
+        </div>
+    </div>
 
         <section class="module">
             <h2 id="sr">Support & Reporting</h2>
@@ -213,30 +236,42 @@
 
 
 
-        <h2 id="contact" style="text-align: center; color: #32145c; font-weight: bold;">CONTACT</h2>
-        <h3 style="text-align: center; color: #32145c;">Get in touch with us</h3>
-        <section class="contact-container">
-            <div class="contact-content">
-                <img src="contact.jpg" class="i1" alt="Contact Image">
-                <div class="contact-form" id="contactForm">
-                    <form>
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="Your name..">
-                        
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email..">
-                        
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject..">
-                        
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Write your message.." style="height:200px"></textarea>
-                        
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
-        </section>
+        <section class="contact-section">
+          <div class="form-container">
+              <!-- Form Section -->
+              <div class="form-left">
+                  <h2>Send us a message</h2>
+                  <form id="contactForm">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" placeholder="Your name.." required>
+  
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Your email.." required>
+  
+                      <label for="subject">Subject</label>
+                      <input type="text" id="subject" name="subject" placeholder="Subject.." required>
+  
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" placeholder="Write your message.." required></textarea>
+  
+                      <button type="submit">Send Message</button>
+                  </form>
+              </div>
+  
+              <!-- Contact Info Section -->
+              <div class="form-right">
+                  <h2 id="contact">Contact us</h2>
+                  <p>We're open for any suggestions or just to have a chat.</p>
+                  <ul class="contact-info">
+                      <li><i class="fas fa-map-marker-alt"></i> Address: 198 West 21th Street, Suite 721, New York, NY 10016</li>
+                      <li><i class="fas fa-phone-alt"></i> Phone: +1235 2355 98</li>
+                      <li><i class="fas fa-envelope"></i> Email: info@yoursite.com</li>
+                      <li><i class="fas fa-globe"></i> Website: yoursite.com</li>
+                  </ul>
+              </div>
+          </div>
+      </section>
+  
     </main>
 
 
@@ -250,7 +285,7 @@
           <div class="card">
             <img src="hetang.jpeg" alt="Jane"  style="width: 100%" height="475px" />
             <div class="container">
-              <h2>Hetang Patel</h2>
+              <h2 style="text-align: center;">Hetang Patel</h2>
               <p class="title">Frontend Developer</p>
               <p>Some text that describes me.</p>
               <p>patelhetang2@gmail.com</p>
@@ -263,7 +298,7 @@
           <div class="card" >
             <img src="jap.jpg" alt="Mike" style="width: 100%" height="475px"/>
             <div class="container">
-              <h2>Jainil Patel</h2>
+              <h2 style="text-align: center;">Jainil Patel</h2>
               <p class="title">Frontend Developer</p>
               <p>Some text that describes me.</p>
               <p>jainilpatel92006@gmail.com</p>
@@ -276,7 +311,7 @@
           <div class="card">
             <img src="hetaa.jpg" alt="John"  style="width: 100%" height="475px"/>
             <div class="container">
-              <h2>Heta Patel</h2>
+              <h2 style="text-align: center;">Heta Patel</h2>
               <p class="title">Designer</p>
               <p>Some text that describes me.</p>
               <p>hetapatel2807@gmail.com</p>
@@ -290,7 +325,7 @@
             <div class="card">
               <img src="daivik.jpg" alt="Jane"  style="width: 100%" height="475px" />
               <div class="container">
-                <h2>Daivik Patel</h2>
+                <h2 style="text-align: center;">Daivik Patel</h2>
                 <p class="title">Designer</p>
                 <p>Some text that describes me.</p>
                 <p>Pateldaivik347@gmail.com</p>
@@ -303,7 +338,7 @@
             <div class="card">
               <img src="ved.jpg" alt="Mike"  style="width: 100%" height="475px" />
               <div class="container">
-                <h2>Ved Raval</h2>
+                <h2 style="text-align: center;">Ved Raval</h2>
                 <p class="title">Designer</p>
                 <p>Some text that describes me.</p>
                 <p>mike@example.com</p>
@@ -316,7 +351,7 @@
             <div class="card">
               <img src="team3.jpg" alt="John"  style="width: 100%" height="475px" />
               <div class="container">
-                <h2>Shehjad Palija</h2>
+                <h2 style="text-align: center;">Shehjad Palija</h2>
                 <p class="title">Backend Developer</p>
                 <p>Some text that describes me.</p>
                 <p>john@example.com</p>
