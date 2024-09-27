@@ -8,23 +8,30 @@
 </head>
 <body>
     <div class="login-container">
+        <!-- Image Section -->
+        <div class="image-section">
+            <img src="i1.jpg" alt="Login Image">
+        </div>
+
+        <!-- Login Form Section -->
         <div class="login-box">
             <h2>Login</h2>
             <form action="login.php" method="POST">
                 <div class="input-box">
-                    <input type="text" name="username" required>
-                    <label>Username</label>
+                    <input type="text" name="username" id="username" required>
+                    <label for="username">Username</label>
                 </div>
                 <div class="input-box">
-                    <input type="password" name="password" required>
-                    <label>Password</label>
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Password</label>
                 </div>
                 <div class="submit-box">
                     <input type="submit" value="Login">
-                   <p>Forgot  <a href="#">Password?</p></a>
+                    <p>Forgot <a href="#">Password?</a></p>
                 </div>
             </form>
         </div>
     </div>
+
 </body>
 </html>
